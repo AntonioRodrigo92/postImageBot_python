@@ -34,7 +34,7 @@ def main(config_path):
             author = post['Author']
             url = post['URL']
             permalink = post['Permalink']
-            comment = f"{title}.\n\n Imagem postada por u/{author}. Obrigado! (link: https://reddit.com{permalink})"
+            comment = f"{title}.\n\nImagem postada por u/{author}. Obrigado! (link: https://reddit.com{permalink})"
 
             #   get photo
             Utils.url_to_image(url, temp_photo_path)
